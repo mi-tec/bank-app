@@ -1,0 +1,45 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the go build
+/bin
+/build
+
+# Dependency directories (managed by Go modules or other tools)
+/vendor
+
+# Go module cache (optional, if you don’t want to commit it)
+/go.mod.sum  # Only if you don’t want to track sum changes
+/go.sum      # Only if you don’t want to track sums
+
+# Test and coverage files
+*.test
+*.out
+*.prof
+cover.out
+coverage.out
+
+# Editor and IDE files
+/.vscode
+/.idea
+*.swp
+*.swo
+*.swn
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Miscellaneous
+*.pid
+*.seed
+*.env
