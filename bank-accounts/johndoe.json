@@ -1,0 +1,13 @@
+{
+	"name": "john doe",
+	"username": "johndoe",
+	"password": "test123",
+	"account_data": {
+		"balance": "250000",
+		"on_hold": "13000"
+	},
+	"history": {
+		"2025/01/30": "2000",
+		"2025/02/05": "5000"
+	}
+}
