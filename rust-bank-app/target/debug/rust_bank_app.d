@@ -1,1 +1,0 @@
-/home/willow/Desktop/bank-app/rust-bank-app/target/debug/rust_bank_app: /home/willow/Desktop/bank-app/rust-bank-app/src/file_handler.rs /home/willow/Desktop/bank-app/rust-bank-app/src/get_user_input.rs /home/willow/Desktop/bank-app/rust-bank-app/src/main.rs

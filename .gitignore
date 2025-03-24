@@ -1,0 +1,28 @@
+# Generated files from Rust builds
+/target
+
+# Rust dependency directory (managed by Cargo)
+/cargo
+
+# Rust-specific lockfile (optional, depending on whether you want to commit it)
+/Cargo.lock
+
+# Common editor and IDE files
+/.vscode
+/.idea
+*.swp
+*.swo
+*.swn
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Optional: Ignore test or benchmark artifacts
+*.profraw
+*.profdata
