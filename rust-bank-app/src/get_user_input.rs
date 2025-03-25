@@ -1,7 +1,8 @@
-use std::io;
+use std::io::{self, Write};
 
 pub fn get_username_input() -> String {
-    println!("Enter username: ");
+    print!("Enter username: ");
+    let _ = io::stdout().flush();
 
     let mut username_input = String::new();
 
