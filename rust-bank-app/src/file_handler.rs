@@ -87,7 +87,9 @@ pub fn read_bank_account(username: &str) -> Result<Context, Box<dyn std::error::
             if check_for_existing_user.is_file() {
                 println!(
                     "{}",
-                    "Username already exists. Please choose a different one.".red()
+                    "Username already exists. Please choose a different one."
+                        .red()
+                        .bold()
                 );
             } else {
                 new_username = sanitized_username;
@@ -133,6 +135,28 @@ pub fn read_bank_account(username: &str) -> Result<Context, Box<dyn std::error::
 
     let json_data = fs::read_to_string(&file_path)?;
     let bank_data: Context = serde_json::from_str(&json_data)?;
+
+    let mut password = String::new();
+
+    let mut password_wrong_count = 0;
+    loop {
+        if password_wrong_count >= 3 {
+            return Err("Wrong password entered muliple time. Existing now".into());
+        }
+        print!("Enter password: ");
+        io::stdout().flush()?;
+        password.clear();
+        io::stdin().read_line(&mut password)?;
+        password = password.trim().to_string();
+
+        if password != bank_data.password {
+            println!("{}", "Invalid password try again".red().bold());
+        } else {
+            break;
+        }
+
+        password_wrong_count += 1;
+    }
 
     Ok(bank_data)
 }

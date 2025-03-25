@@ -8,7 +8,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     match file_handler::read_bank_account(&username) {
         Ok(response) => println!("{:?}", response),
-        Err(e) => println!("{}", format!("Error: {}", e).red()),
+        Err(e) => println!("{}", format!("Error: {}", e).red().bold()),
     }
 
     Ok(())
