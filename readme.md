@@ -16,7 +16,7 @@ Developing a same bank app using `rust`, `go`, `bun` and sometimes more
 Clone the project
 
 ```bash
-  git clone git@github.com:mi-tec/bank-app.git
+  git clone git@github.com:mi-tec/bank-app.git && cd bank-app
 ```
 
 Go to the project directory
